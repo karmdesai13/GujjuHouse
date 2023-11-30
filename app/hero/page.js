@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 
+
 function Hero() {
 
   const [testimonials, setTestimonials] = useState([
@@ -106,7 +107,10 @@ function Hero() {
             <a  href="./hero" className="mr-5  cursor-pointer hover:underline transition-transform hover:scale-125 duration-300">Home</a>
             <a   href="./menu" className="mr-5 cursor-pointer hover:underline transition-transform hover:scale-125 duration-300">Menu</a>
             <a   href="./about" className="mr-5 hover:underline transition-transform hover:scale-125 duration-300">About Us</a>
-            <a className="hover:underline transition-transform hover:scale-125 duration-300">Contact</a>
+            
+            <a   href="./SignIn" className="mr-5 cursor-pointer hover:underline transition-transform hover:scale-125 duration-300">Sign-In</a>
+
+            
           </nav>
         </div>
       </header>
