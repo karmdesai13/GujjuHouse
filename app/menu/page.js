@@ -25,8 +25,8 @@ export default function Menu() {
 
     return (
         <div className=" min-h-screen  bg-orange-600" >
-            <header className="text-white body-font">
-                <div className="container mx-auto flex flex-wrap p-5 md:flex-row items-center justify-between">
+            <header className="text-white ">
+                <div className=" flex flex-wrap p-5 items-center justify-between">
           
                     <div className="flex items-center">
                         <img src="./images/Food2.png" alt="logo" className="rounded-full h-12 w-12 mr-3" /> 
@@ -41,19 +41,16 @@ export default function Menu() {
                     </nav>
                 </div>
             </header>
-            <div className=" flex items-center justify-center flex-col">
-            <h1 className="text-5xl text-white mt-5">Menu</h1>
-            <p className="text-white text-xl mt-5">Experience the taste of authentic Gujarati cuisine.</p>
+            <div className=" flex items-center justify-center flex-col text-white">
+            <h1 className="text-5xl  mt-5">Menu</h1>
+            <p className=" text-xl mt-5">Experience the taste of authentic Gujarati cuisine.</p>
             </div>
 
         
         
 
-        <div className=" mr-5 mt-5 ml-5 px-10 py-10 bg-white rounded-3xl " style={{ backgroundImage: "url('./images/Starters.png')"
-        ,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat" }}>
-                <h1 className="text-4xl font-bold text-center text-white mb-6">Starters</h1>
+        <div className=" bg-starters bg-cover bg-no-repeat mr-5 mt-5 ml-5 px-10 py-10 bg-white rounded-3xl text-white ">
+                <h1 className="text-4xl font-bold text-center mb-6">Starters</h1>
                 <div className="flex flex-wrap justify-center gap-4">
                     {starters.map((starter) => (
                         <div key={starter.name} className="bg-white rounded-lg shadow-md p-4 max-w-sm">
@@ -63,21 +60,16 @@ export default function Menu() {
                             <h3 className="text-xl font-medium text-gray-900">{starter.price}</h3>
                         </div>
                     ))}
-
-                    
-                
                 </div>
 
-                <Link href="./starters" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 text-white
+        <Link href="./starters" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 
                     transition-transform hover:scale-110 hover:underline duration-700">More Starters</Link>
                 
-            </div>
+        </div>
 
             
-            <div className="  mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl shadow-lg" style={{ backgroundImage: "url('./images/Main.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat"  }}>
-                <h1 className="text-4xl font-bold text-center text-white mb-6">Mains</h1>
+            <div className="bg-main bg-cover bg-no-repeat  mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl text-white " >
+                <h1 className="text-4xl font-bold text-center mb-6">Mains</h1>
                 <div className="flex flex-wrap justify-center gap-4">
                     {mains.map((main) => (
                         <div key={main.name} className="bg-white rounded-lg shadow-md p-4 max-w-sm">
@@ -88,14 +80,12 @@ export default function Menu() {
                         </div>
                     ))}
                 </div>
-                <Link href="./starters" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 text-white
+                <Link href="./mains" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 
                     transition-transform hover:scale-110 hover:underline duration-700">More Main Course</Link>
             </div>
 
-            <div className="  mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl shadow-lg" style={{ backgroundImage: "url('./images/D.png')" ,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat" }}>
-                <h1 className="text-4xl font-bold text-center text-white mb-6">Desserts</h1>
+            <div className=" bg-dessert bg-cover bg-no-repeat mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl  text-white" >
+                <h1 className="text-4xl font-bold text-center  mb-6">Desserts</h1>
                 <div className="flex flex-wrap justify-center gap-4">
                     {desserts.map((desserts) => (
                         <div key={desserts.name} className="bg-white rounded-lg shadow-md p-4 max-w-sm">
@@ -107,20 +97,15 @@ export default function Menu() {
                     ))}
                 </div>
                 
-            <a href="./desserts"
-               className="border-0 outline outline-2 outline-white bg-black text-white outline-offset-0 cursor-pointer text-lg leading-10 max-w-[160px] w-full tracking-wider font-semibold relative no-underline uppercase flex justify-center transition-all duration-550 ease-in-out hover:border-2 hover:border-[#FF9950] hover:outline-transparent hover:outline-offset-4 hover:text-[#FF9950]"
-               title="Learn">
-                More 
-            </a>
+                <Link href="./desserts" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5
+                    transition-transform hover:scale-110 hover:underline duration-700">More Desserts</Link>
         
             </div>
 
             
 
-            <div className="  mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl shadow-lg" style={{ backgroundImage: "url('./images/B.png')" ,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat"   }}>
-                <h1 className="text-4xl font-bold text-center text-white mb-6">Beverages</h1>
+            <div className=" bg-beverage bg-cover bg-no-repeat mr-5 mt-5 ml-5 px-10 py-10  bg-white rounded-3xl text-white ">
+                <h1 className="text-4xl font-bold text-center  mb-6">Beverages</h1>
                 <div className="flex flex-wrap justify-center gap-4">
                     {beverages.map((beverages) => (
                         <div key={beverages.name} className="bg-white rounded-lg shadow-md p-4 max-w-sm">
@@ -131,7 +116,7 @@ export default function Menu() {
                         </div>
                     ))}
                 </div>
-                <Link href="./beverages" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 text-white
+                <Link href="./beverages" className=" flex mt-5 ml-60 mr-60  justify-center rounded-xl bg-blue-600 p-5 
                     transition-transform hover:scale-110 hover:underline duration-700">More beverages</Link>
             </div>
         </div>

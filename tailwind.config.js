@@ -9,7 +9,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         'food': "url('../public/images/Food2.png')",
-        'hero':"url('../public/images/Food.png')"
+        'hero':"url('../public/images/Food.png')",
+        'starters':"url('../public/images/Starters.png')",
+        'main':"url('../public/images/Main.png')",
+        'dessert':"url('../public/images/D.png')",
+        "beverage":"url('../public/images/B.png')",
+
 
       }
     },
