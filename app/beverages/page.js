@@ -51,10 +51,10 @@ export default function Beverages() {
 
     
 
-    const [showCart, setShowCart] = useState(false);  // New state for toggling cart visibility
+    const [showCart, setShowCart] = useState(false);  
 
     const toggleCart = () => {
-        setShowCart(!showCart);  // Toggle the cart visibility
+        setShowCart(!showCart);  
     };
 
 
@@ -62,7 +62,7 @@ export default function Beverages() {
 
     return(
         <div className="flex h-screen">
-            {/* Sidebar */}
+           
             <div className="sidebar bg-orange-500 text-white w-64 p-5">
                 <h2 className="text-xl font-semibold mb-5">Menu Categories</h2>
                 <nav>
@@ -71,15 +71,16 @@ export default function Beverages() {
                         <li><Link href="./starters" className="m-3 ">Starters</Link></li>
                         <li><Link href="./mains" className="m-3">Mains</Link></li>
                         <li><Link href="./desserts" className="m-3">Desserts</Link></li>
-                        <li><Link href="./beverages" className="m-3">Beverages</Link></li>
+                        <li><Link href="./hero" className="m-3">Home </Link></li>
+
                     </ul>
                     
                 </nav>
             </div>
 
-            {/* Menu Content */}
-            <div className="flex-grow bg-white rounded-3xl shadow-lg overflow-auto">
-                <div className="bg-cover bg-no-repeat py-10 px-10" style={{ backgroundImage: "url('./images/B.png')" }}>
+            
+            <div className="flex-grow bg-white rounded-3xl  overflow-auto">
+                <div className="bg-beverage bg-cover bg-no-repeat py-10 px-10" >
                     <h1 className="text-4xl font-bold text-center text-white mb-6">Beverages</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {beverages.map((beverages, index) => (
@@ -88,26 +89,20 @@ export default function Beverages() {
                                 <h3 className="text-xl font-medium text-gray-900">{beverages.name}</h3>
                                 <p className="text-base text-gray-700">{beverages.description}</p>
                                 <h3 className="text-xl font-medium text-gray-900">{beverages.price}</h3>
-                                <button 
-                onClick={() => addToCart(beverages)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >
-                Add to Cart
-            </button>
+                                <button onClick={() => addToCart(beverages)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                    Add to Cart
+                                </button>
                             </div>
                         ))}
                     </div>
 
-                    <button 
-                    onClick={toggleCart}
-                    className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded my-4 mx-auto block"
-                >
+                    <button onClick={toggleCart} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded my-4 mx-auto block">
                     {showCart ? 'Hide Cart' : 'View Cart'}
-                </button>
+                    </button>
 
-                {/* Cart Section - Conditional Rendering */}
+                
                 {showCart && (
-                    <div className="container mx-auto p-4 bg-white rounded-lg shadow-lg">
+                    <div className="container mx-auto p-4 bg-white rounded-lg ">
                         <h2 className="text-2xl mb-4">Your Cart</h2>
                         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {cart.map((item, index) => (
@@ -121,12 +116,9 @@ export default function Beverages() {
                             <span>{item.quantity}</span>
                             <button onClick={() => increaseQuantity(item)} className="bg-green-500 text-white px-2 py-1">+</button>
                         </div>
-                        <button 
-        onClick={() => removeFromCart(item.name)}
-        className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
-    >
-        Remove
-    </button>
+                        <button onClick={() => removeFromCart(item.name)} className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                            Remove
+                        </button>
                                 </li>
                             ))}
                         </ul>
