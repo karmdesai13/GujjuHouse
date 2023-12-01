@@ -21,7 +21,7 @@ function Hero() {
       text: "I was blown away by the variety and quality of traditional Gujarati dishes. The Basundi was the perfect end to our meal.",
       location: "Surat" 
     }
-    // Add more testimonials as needed
+    
   ]);
 
   const dishes = [
@@ -92,10 +92,10 @@ function Hero() {
       
       
     return (
-        <div className="App " style={{ backgroundImage: "url('./images/Food.png')" }}>
+        <div className=" bg-hero " >
       
-      <header className="text-white body-font">
-        <div className="container mx-auto flex flex-wrap p-5 md:flex-row items-center justify-between">
+      <header className="text-white">
+        <div className=" mx-auto flex flex-wrap p-5  items-center justify-between">
           
           <div className="flex items-center">
             <img src="./images/Food2.png" alt="logo" className="rounded-full h-12 w-12 mr-3" /> 
@@ -117,10 +117,10 @@ function Hero() {
       </header>
         
         
-      <section className="rounded-3xl bg-orange-600 mx-auto mr-5 ml-5 flex px-5 py-24 m-4 items-center justify-center flex-col">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-semibold text-white text-center">The Essence of Gujarati Cuisine</h2>
-          <div className="text-center mt-6 text-white">
+      <section className="rounded-3xl bg-orange-600 text-center mr-5 ml-5  px-5 py-24 m-4 items-center justify-center text-white ">
+        <div>
+          <h2 className="text-2xl font-semibold ">The Essence of Gujarati Cuisine</h2>
+          <div className=" mt-6">
             <p className="mb-4">
               Gujarati cuisine is much more than just a treat for your taste buds. It's a journey through a rich cultural landscape, marked by diverse flavors and unique cooking techniques. Each dish tells a story of different regions and communities of Gujarat.
             </p>
@@ -131,44 +131,44 @@ function Hero() {
         </div>
       </section>
 
-      {/* Meet Our Team Section */}
-      <section className="rounded-3xl bg-orange-600 mx-auto flex mr-5 ml-5 px-5 py-24 m-4 items-center justify-center flex-col">
-        <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-semibold text-white">Meet Our Team</h2>
-          <p className="mb-6 text-white">The heart and soul of Gujju House</p>
-          <div className="flex flex-wrap justify-center">
-            {/* Placeholder for team members */}
-            <div className="p-4">
+      
+      <section className="rounded-3xl bg-orange-600 mr-5 ml-5 px-5 py-24 m-4 items-center justify-center text-white text-center ">
+        <div >
+          <h2 className="text-2xl font-semibold">Meet Our Team</h2>
+          <p className="mb-6">The heart and soul of Gujju House</p>
+          <div className="flex justify-center  gap-6">
+            
+            <div >
               <img src="./images/zain.png" alt="Chef" className="rounded-full w-32 h-32 mb-2"/>
-              <h3 className="text-white">Chef Zain</h3>
+              <h3 className="">Chef Zain</h3>
               <p className="text-gray-200">Head Chef</p>
             </div>
-            {/* Repeat for other team members */}
-            <div className="p-4">
+            
+            <div >
               <img src="./images/prit.png" alt="Chef" className="rounded-full w-32 h-32 mb-2"/>
-              <h3 className="text-white">Chef Prit</h3>
+              <h3>Chef Prit</h3>
               <p className="text-gray-200">Head Chef</p>
             </div>
-            <div className="p-4">
+            <div >
               <img src="./images/owner.png" alt="Chef" className="rounded-full w-32 h-32 mb-2"/>
-              <h3 className="text-white"> Karm</h3>
+              <h3> Karm</h3>
               <p className="text-gray-200">Owner</p>
             </div>
-            <div className="p-4">
+            <div >
               <img src="./images/manager.png" alt="Chef" className="rounded-full w-32 h-32 mb-2"/>
-              <h3 className="text-white"> Sourabh</h3>
+              <h3 > Sourabh</h3>
               <p className="text-gray-200">Manager</p>
             </div>
           </div>
         </div>
       </section>
 
-          <section className="rounded-3xl bg-orange-600 mr-5 ml-5 flex px-5 py-24 m-4 items-center justify-center flex-col">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-semibold text-white text-center">Featured Dishes</h2>
+          <section className="rounded-3xl bg-orange-600 mr-5 ml-5  px-5 py-24 m-4 items-center justify-center ">
+        <div >
+          <h2 className="text-4xl underline font-semibold text-white text-center">Featured Dishes</h2>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             {dishes.map((dish) => (
-              <div key={dish.name} className="bg-white rounded-lg shadow-lg p-4 max-w-sm">
+              <div key={dish.name} className="bg-white rounded-lg  p-4 max-w-sm">
                 <img src={`./images/${dish.name}.png`}  className='h-40 mb-6
                     transition-transform hover:scale-110 duration-300' />
                 <h3 className="text-xl font-medium text-gray-900">{dish.name}</h3>
@@ -178,8 +178,8 @@ function Hero() {
           </div>
         </div>
       </section>
-      <section className=" mr-5 ml-5 rounded-3xl bg-orange-600 mx-auto flex px-5 m-4 py-24 items-center justify-center flex-col">
-        <div className="container mx-auto">
+      <section className=" mr-5 ml-5 rounded-3xl bg-orange-600 mx-auto  px-5 m-4 py-24 items-center justify-center ">
+        <div >
           <h2 className="text-2xl font-semibold text-white text-center">Customer Testimonials</h2>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             {testimonials.map((testimonial, index) => (
@@ -191,8 +191,8 @@ function Hero() {
             ))}
           </div>
 
-          {/* Add Testimonial Form */}
-          <div className="mt-8 flex items-center justify-center ">
+          
+          <div className="mt-8 flex items-center justify-center  ">
             <form onSubmit={handleSubmit} >
               <input
                 type="text"
@@ -223,7 +223,7 @@ function Hero() {
                 className="p-2 m-2"
                 maxLength={20}
               />
-              <button type="submit" className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+              <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
                 Submit Testimonial
               </button>
             </form>
@@ -231,40 +231,24 @@ function Hero() {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      
       <div>
-            {/* Gallery Section */}
-            <div className="bg-orange-600 mr-5 ml-5  grid place-items-center rounded-lg p-10">
+            
+            <div className="bg-orange-600 mr-5 ml-5  grid items-center justify-center rounded-lg p-10">
             <h2 className="text-4xl font-semibold mb-10 text-white text-center">Gallery</h2>
                 <div className="flex">
                     
                     {galleryImages.map((image, index) => (
-                        <div key={index} className="relative left-0 w-28 h-40 bg-[#6B626C] rounded-lg transition-all duration-1000 ease-in-out overflow-hidden shadow-lg hover:translate-y-[-16px] hover:cursor-pointer group">
+                        <div key={index} className=" w-28 h-40 bg-[#6B626C] rounded-lg transition-all duration-1000 ease-in-out overflow-hidden shadow-lg hover:translate-y-[-16px] hover:cursor-pointer group">
                             <img className="h-40  object-cover rounded-md" src={image.src} alt={image.alt} />
-                            {index !== 0 && <div className="ml-[-45px] group-hover:left-14"></div>}
+                            {index !== 0 && <div className=" group-hover:left-14"></div>}
                         </div>
                     ))}
                 </div>
             </div>
-
-            
-            
+          </div>
         </div>
-
-      
-      
-
-    </div>
-        
-
-        
-        
-        
-  
-        
-        
-      
-    );
+        );
   }
   
   export default Hero;

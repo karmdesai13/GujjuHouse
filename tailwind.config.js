@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+        'food': "url('../public/images/Food2.png')",
+        'hero':"url('../public/images/Food.png')"
+
+      }
     },
   },
   plugins: [require("daisyui")],
