@@ -10,9 +10,7 @@ export default function Desserts() {
         { name: "Ras Malai", description: "Cottage cheese balls in sweetened milk", price: "$6" },
         { name: "Rasgulla", description: "Spongy cottage cheese balls in syrup", price: "$5" },
         { name: "Kaju Katli", description: "Diamond-shaped sweet made from cashew nuts", price: "$6" },
-        { name: "Moong Dal Halwa", description: "Sweet lentil pudding", price: "$5" },
-        { name: "Puran Poli", description: "Sweet flatbread filled with lentil and jaggery mixture", price: "$4" },
-        { name: "Laddu", description: "Ball-shaped sweets made of flour and sugar", price: "$3" }
+        
     ];
 
     const [cart, setCart] = useState([]);

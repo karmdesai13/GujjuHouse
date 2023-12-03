@@ -11,11 +11,11 @@ export default function Beverages() {
         { name: "Lassi", description: "Yogurt-based milkshake", price: "$4" },
         { name: "Nimbu Pani", description: "Indian lemonade", price: "$2" },
         { name: "Mango Lassi", description: "Mango-flavored yogurt drink", price: "$5" },
-        { name: "Masala Soda", description: "Spiced carbonated water", price: "$3" },
-        { name: "Jeera Water", description: "Cumin-flavored water", price: "$2" },
+        
+        
         { name: "Falooda", description: "Dessert beverage with vermicelli and basil seeds", price: "$5" },
-        { name: "Kesar Pista Milk", description: "Saffron and pistachio flavored milk", price: "$4" },
-        { name: "Kokum Juice", description: "Refreshing juice made from Kokum fruit", price: "$3" }
+        
+        
     ];
 
    

@@ -57,10 +57,7 @@ function Hero() {
       name: "Khandvi",
       description: "Delicate rolls made from gram flour and yogurt, seasoned with mustard seeds and coconut."
     },
-    {
-      name: "Dabeli",
-      description: "A popular street food item consisting of a spicy potato mixture stuffed in a bun, garnished with pomegranate and sev."
-    }
+   
     
     
   ];
@@ -84,8 +81,9 @@ function Hero() {
   const galleryImages = [
     { src: 'images/Thepla.png', alt: 'Thepla' },
     { src: 'images/Chakri.png', alt: 'Chakri' },
-    { src: 'images/Basundi.png', alt: 'Forest mountains' },
-    { src: 'images/Dhokla.png', alt: 'Forest mountains' },
+    { src: 'images/Basundi.png', alt: 'Basundi' },
+    { src: 'images/Dhokla.png', alt: 'Dhokla' },
+    { src: 'images/Handvo.png', alt: 'Handvo' },
     
 ];
 
